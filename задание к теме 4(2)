@@ -1,0 +1,13 @@
+#include <iostream>
+using namespace std;
+int main()
+{
+	setlocale(LC_ALL, "Rus");
+	const float p = 3.14;
+	float d, L;
+	cout << "Введи значение диаметра" << endl;
+	cin >> d;
+	L = p * d;
+	cout << "Длина диаметра окружности равна " << L << endl;
+	return 0;
+}
