@@ -1,0 +1,18 @@
+#include <iostream>
+using namespace std;
+int main()
+{
+	setlocale(LC_ALL, "Rus");
+	float a, b, sum, ras, pr, ch;
+	cout << "Введите два ненулевых числа" << endl;
+	cin >> a >> b;
+	sum = abs(a) + abs(b);
+	ras = abs(a) - abs(b);
+	pr = abs(a) * abs(b);
+	ch = abs(a) / abs(b);
+	cout << "сумма модулей равна " << sum << endl;
+	cout << "разность модулей равна " << ras << endl;
+	cout << "произведение модулей равно " << pr << endl;
+	cout << "частное модулей равно " << ch << endl;
+	return 0;
+}
