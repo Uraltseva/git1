@@ -1,0 +1,12 @@
+#include <iostream>
+using namespace std;
+int main()
+{
+	setlocale(LC_ALL, "Rus");
+	float a, b, E;
+	cout << "Введи значение чисел a и b" << endl;
+	cin >> a >> b;
+	E = (a + b) / 2;
+	cout << "среднее арифметическое равнo " << E << endl;
+	return 0;
+}
