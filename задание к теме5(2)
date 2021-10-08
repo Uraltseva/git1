@@ -1,0 +1,17 @@
+#include <iostream>
+using namespace std;
+int main()
+{
+	setlocale(LC_ALL, "Rus");
+	float A, B, C, AC, BC, S;
+	cout << "Введите координаты трех точек на числовой оси" << endl;
+	cout << "A, B, C" << endl;
+	cin >> A >> B >> C;
+	AC = abs(C - A);
+	BC = abs(C - B);
+	S = AC + BC;
+	cout << "длина отрезка AC равна " << AC << endl;
+	cout << "длина отрезка BC равна " << BC << endl;
+	cout << "сумма отрезков равна " << S << endl;
+	return 0;
+}
