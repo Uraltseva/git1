@@ -1,0 +1,16 @@
+#include <iostream>
+using namespace std;
+int main()
+{
+	setlocale(LC_ALL, "Rus");
+	float x1, x2, y1, y2, R;
+	cout << "Введите координаты двух точек (x и y) " << endl;
+	cout << "x1, y1" << endl;
+	cin >> x1 >> y1;
+	cout << "x2, y2" << endl;
+	cin >> x2 >> y2;
+	R = sqrt(pow(x2 - x1, 2) + pow(y2 - y1, 2));
+	cout << "расстояние между двумя точками равно" << endl;
+	cout << R << endl;
+	return 0;
+}
