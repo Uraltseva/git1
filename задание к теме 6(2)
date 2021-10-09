@@ -1,0 +1,17 @@
+#include <iostream>
+using namespace std;
+int main()
+{
+	setlocale(LC_ALL, "Rus");
+	float A, B, C, P;
+	cout << "Введите значение переменных A, B, C " << endl;
+	cin >> A >> B >> C;
+	P = A;
+	A = B;
+	B = C;
+	C = P;
+	cout << "значение переменной A равно " << A << endl;
+	cout << "значение переменной B равно " << B << endl;
+	cout << "значение переменной C равно " << C << endl;
+	return 0;
+}
