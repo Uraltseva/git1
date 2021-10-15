@@ -1,0 +1,15 @@
+#include <iostream>
+using namespace std;
+int main()
+{
+	setlocale(LC_ALL, "Rus");
+	float A, C;
+	cout << "Введите значение A " << endl;
+	cout << "A = ";
+	cin >> A;
+	C = A * A;
+	C = C * C;
+	C = C * C;
+	cout << "значение C равно " << C << endl;
+	return 0;
+}
