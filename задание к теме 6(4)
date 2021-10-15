@@ -1,0 +1,13 @@
+#include <iostream>
+using namespace std;
+int main()
+{
+	setlocale(LC_ALL, "Rus");
+	float x, y;
+	cout << "Введите значение переменной x " << endl;
+	cout << "x = ";
+	cin >> x;
+	y = 3 * pow(x, 6) - 6 * pow(x, 2) - 7;
+	cout << "значение переменной y равно " << y << endl;
+	return 0;
+}
