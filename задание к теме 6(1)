@@ -5,11 +5,12 @@ int main()
 	setlocale(LC_ALL, "Rus");
 	float A, B, P;
 	cout << "Введите значение переменных A и B " << endl;
+	cout << "A" << "B ";
 	cin >> A >> B;
 	P = A;
 	A = B;
 	B = P;
-	cout << "значение переменной A равно " << A <<  endl;
+	cout << "значение переменной A равно " << A << endl;
 	cout << "значение переменной B равно " << B << endl;
 	return 0;
 }
