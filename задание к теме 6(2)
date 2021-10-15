@@ -3,13 +3,15 @@ using namespace std;
 int main()
 {
 	setlocale(LC_ALL, "Rus");
-	float A, B, C, P;
+	float A, B, C, P, W;
 	cout << "Введите значение переменных A, B, C " << endl;
+	cout << "A" << "B" << "C ";
 	cin >> A >> B >> C;
-	P = A;
-	A = B;
-	B = C;
+	P = B;
+	B = A;
+	W = C;
 	C = P;
+	A = W;
 	cout << "значение переменной A равно " << A << endl;
 	cout << "значение переменной B равно " << B << endl;
 	cout << "значение переменной C равно " << C << endl;
