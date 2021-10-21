@@ -4,11 +4,11 @@ int main()
 {
 	setlocale(LC_ALL, "Rus");
 	float a, rad;
-	cout << "введите значение угла a " << endl;
-	cout << "a ";
+	cout << "введите значение угла a в градусах" << endl;
+	cout << "a = ";
 	cin >> a;
 	const float P(3.14);
-	rad = (a * P) / 180;
+	rad = a * (P / 180);
 	cout << "значение угла a в радианах = " << rad << endl;
 	return 0;
 }
