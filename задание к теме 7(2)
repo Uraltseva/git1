@@ -1,0 +1,14 @@
+#include <iostream>
+using namespace std;
+int main()
+{
+	setlocale(LC_ALL, "Rus");
+	float a, gr;
+	cout << "введите значение угла a в радианах" << endl;
+	cout << "a = ";
+	cin >> a;
+	const float P(3.14);
+	gr = a * 180 / P;
+	cout << "значение угла a в градусах = " << gr << endl;
+	return 0;
+}
