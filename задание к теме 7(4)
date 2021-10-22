@@ -1,0 +1,22 @@
+#include <iostream>
+using namespace std;
+int main()
+{
+	setlocale(LC_ALL, "Rus");
+	float V1, V2, S, T, S3;
+	cout << "введите скорость первого автомобиля V1 км/ч" << endl;
+	cout << "V1 = ";
+	cin >> V1;
+	cout << "введите скорость второго автомобиля V2 км/ч" << endl;
+	cout << "V2 = ";
+	cin >> V2;
+	cout << "введите расстояние между ними S км" << endl;
+	cout << "S = ";
+	cin >> S;
+	cout << "введите прошедшее время T ч" << endl;
+	cout << "T = ";
+	cin >> T;
+	S3 = S + V1 * T + V2 * T;
+	cout << "расстояние между автомобилями равно " << S3 << endl;
+	return 0;
+}
