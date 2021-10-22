@@ -1,0 +1,16 @@
+#include <iostream>
+using namespace std;
+int main()
+{
+	setlocale(LC_ALL, "Rus");
+	float A, B, x;
+	cout << "введите коэффициент A" << endl;
+	cout << "A = ";
+	cin >> A;
+	cout << "введите коэффициент B" << endl;
+	cout << "B = ";
+	cin >> B;
+	x = (-1) * B / A;
+	cout << "x равен " << x << endl;
+	return 0;
+}
