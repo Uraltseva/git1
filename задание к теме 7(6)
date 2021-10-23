@@ -12,9 +12,9 @@ int main()
 	D2 = A1 * C2 - A2 * C1;
 	x = D1 / D;
 	y = D2 / D;
-	if (x = - 0)
+	if (x == - 0)
 		x = 0;
-	if (y = - 0)
+	if (y == - 0)
 		y = 0;
 	cout << "x равно " << x << endl;
 	cout << "y равно " << y << endl;
