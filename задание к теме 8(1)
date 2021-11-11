@@ -1,0 +1,12 @@
+#include<iostream>
+using namespace std;
+int main()
+{
+	setlocale(LC_ALL, "Rus");
+	float byte, kilobyte;
+	cout << "Введите размер файла в байтах" << endl;
+	cin >> byte;
+	kilobyte = byte / 1024;
+	cout << "Размер файла в килобайтах равен " << kilobyte << endl;
+	return 0;
+	}
