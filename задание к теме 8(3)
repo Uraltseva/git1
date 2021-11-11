@@ -1,0 +1,14 @@
+#include<iostream>
+using namespace std;
+int main()
+{
+	setlocale(LC_ALL, "Rus");
+	int A, B, R;
+	cout << "Введите положительную длину отрезка A" << endl;
+	cin >> A;
+	cout << "Введите положительную длину отрезка B" << endl;
+	cin >> B;
+	R = A % B;
+	cout << "Длиннa незанятой части отрезка A " << R << endl;
+	return 0;
+}
