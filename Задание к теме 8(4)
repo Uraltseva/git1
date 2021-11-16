@@ -4,7 +4,7 @@ int main()
 {
 	setlocale(LC_ALL, "Rus");
 	int v, w, v1, v2;
-    cout << "Введите двузначное число." << endl;
+    cout << "Введите двузначное число" << endl;
     cin >> v;
     v1 = v / 10;
     v2 = v - v1 * 10;
