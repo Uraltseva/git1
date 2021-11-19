@@ -1,0 +1,14 @@
+#include<iostream>
+using namespace std;
+int main()
+{
+	setlocale(LC_ALL, "Rus");
+	int A, B, C, S, r;
+	cout << "Введите целые положительные числа A, B, C" << endl;
+	cin >> A >> B >> C;
+	r = (A / C) * (B / C);
+	S = A * B - r * C * C;
+	cout << "Количество квадратов, размещенных на прямоугольнике = " << r << endl;
+	cout << "Площадь незанятой части прямоугольника = " << S << endl;
+	return 0;
+}
