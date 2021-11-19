@@ -1,0 +1,15 @@
+#include<iostream>
+using namespace std;
+int main()
+{
+	setlocale(LC_ALL, "Rus");
+	int K, N, n;
+	cout << "Введите целое число в диапазоне 1–365" << endl;
+	cin >> K;
+	cout << "Введите целое число в диапазоне 1-7" << endl;
+	cin >> N;
+	n = K % 7;
+	n = ((K + N - 2) % 7) + 1;
+	cout << "Номер дня недели = " << n << endl;
+	return 0;
+}
