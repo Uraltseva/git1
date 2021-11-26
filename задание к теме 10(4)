@@ -1,0 +1,16 @@
+#include<iostream>
+using namespace std;
+int main()
+{
+    setlocale(LC_ALL, "Rus");
+    int V;
+    cout << "Введите трехзначное число V" << endl;
+    cin >> V;
+    if ((V / 100) > (V % 100 / 10) && (V % 100 / 10) > (V % 10) || (V / 100) < (V % 100 / 10) && (V % 100 / 10) < (V % 10)) {
+        cout << "Истинно";
+    }   
+    else {
+        cout << "Ложь";
+    }
+    return 0;
+}
