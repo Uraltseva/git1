@@ -9,8 +9,7 @@ int main()
     if (V % 2 == 0 && V > 9 && V < 100) {
         cout << "Истинно";
     }
-    else
-    {
+    else {
         cout << "Ложь";
     }
     return 0;
