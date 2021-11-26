@@ -1,0 +1,20 @@
+#include<iostream>
+using namespace std;
+int main()
+{
+    setlocale(LC_ALL, "Rus");
+    int A, B, C;
+    cout << "Введите целое число A" << endl;
+    cin >> A;
+    cout << "Введите целое число B" << endl;
+    cin >> B;
+    cout << "Введите целое число C" << endl;
+    cin >> C;
+    if (A < B && B < C) {
+        cout << "Истинно" << endl;
+    }
+    else {
+        cout << "Ложь" << endl;
+    }
+    return 0;
+}
