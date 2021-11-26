@@ -1,0 +1,17 @@
+#include<iostream>
+using namespace std;
+int main()
+{
+    setlocale(LC_ALL, "Rus");
+    int V;
+    cout << "Введите целое число V" << endl;
+    cin >> V;
+    if (V % 2 == 0 && V > 9 && V < 100) {
+        cout << "Истинно";
+    }
+    else
+    {
+        cout << "Ложь";
+    }
+    return 0;
+}
