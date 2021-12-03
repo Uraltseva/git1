@@ -4,7 +4,7 @@ int main()
 {
     setlocale(LC_ALL, "Russian");
     int A, B;
-    cout << "Введите два целых числа." << endl;
+    cout << "Введите два целых числа" << endl;
     cin >> A >> B;
     if (A == B) { A = 0; B = 0; }
     else {
