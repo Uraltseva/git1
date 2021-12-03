@@ -1,0 +1,15 @@
+#include <iostream>
+using namespace std;
+int main()
+{
+    setlocale(LC_ALL, "Russian");
+    int V;
+    cout << "Введите целое число" << endl;
+    cin >> V;
+    if (V == 0) { cout << "Нулевое число" << endl; }
+    if ((V > 0) && (V % 2 == 0)) { cout << "Положительное четное число" << endl; }
+    if ((V > 0) && (V % 2 != 0)) { cout << "Положительное нечетное число" << endl; }
+    if ((V < 0) && (V % 2 == 0)) { cout << "Отрицательное четное число" << endl; }
+    if ((V < 0) && (V % 2 != 0)) { cout << "Отрицательное нечетное число" << endl; }
+    return 0;
+}
