@@ -1,0 +1,21 @@
+#include <iostream>
+using namespace std;
+int main()
+{
+    setlocale(LC_ALL, "Russian");
+    int a, b, c;
+    cout << "Введите три числа" << endl;
+    cin >> a >> b >> c;
+    if (b <= c && b <= a) {
+        cout << a + c;
+    }
+    else {
+        if (a <= c && a <= b) {
+            cout << b + c;
+        }
+        else {
+            cout << b + a;
+        }
+    }
+    return 0;
+}
