@@ -1,0 +1,16 @@
+#include <iostream>
+using namespace std;
+int main()
+{
+    setlocale(LC_ALL, "Russian");
+    int a, b, c;
+    cout << "Введите целые числа a, b, c" << endl;
+    cin >> a >> b >> c;
+    if ((a < b + c) && (b < a + c) && (c < a + b)) {
+        cout << "Истинно" << endl;
+    }
+    else {
+        cout << "Ложно" << endl;
+    }
+    return 0;
+}
