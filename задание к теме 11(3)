@@ -1,0 +1,21 @@
+#include <iostream>
+using namespace std;
+int main()
+{
+    setlocale(LC_ALL, "Russian");
+    float a1, a2, a3, b1, b2, b3, v1, v2;
+    cout << "Введите две координаты точки A" << endl;
+    cin >> a1 >> b1;
+    cout << "Введите две координаты точки B." << endl;
+    cin >> a2 >> b2;
+    cout << "Введите две координаты точки C." << endl;
+    cin >> a3 >> b3;
+    v1 = sqrt((a2 - a1) * (a2 - a1) + (b2 - b1) * (b2 - b1));
+    v2 = sqrt((a3 - a1) * (a3 - a1) + (b3 - b1) * (b3 - b1));
+    if (v1 = v2) { cout << "Расстояние между точками A и B, A и C равно между собой. Оно = " << v1 << endl; }
+    if (v1 < v2) { cout << "Точка B расположена ближе к точке A, ее расстояние от точки A = " << v1 << endl; }
+    else {
+        if (v1 != v2) cout << "Точка C расположена ближе к точке A, ее расстояние от точки A = " << v2 << endl;
+        return 0;
+    }
+}
