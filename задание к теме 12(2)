@@ -1,0 +1,68 @@
+#include <iostream>
+using namespace std;
+int main()
+{
+    setlocale(LC_ALL, "Rus");
+    int N;
+    char C;
+    cout << "Введите направление (С, З, Ю, В)" << endl;
+    cin >> C;
+    cout << "Введите номер команды (0, 1, -1)" << endl;
+    cin >> N;
+    switch (C)
+    {
+    case 'С':
+        switch (N) {
+        case 0:
+            C = 'С';
+            break;
+        case 1:
+            C = 'З';
+            break;
+        case -1:
+            C = 'В';
+            break;
+        }
+
+    case 'З':
+        switch (N) {
+        case 0:
+            C = 'З';
+            break;
+        case 1:
+            C = 'Ю';
+            break;
+        case -1:
+            C = 'С';
+            break;
+        }
+
+    case 'Ю':
+        switch (N) {
+        case 0:
+            C = 'Ю';
+            break;
+        case 1:
+            C = 'В';
+            break;
+        case -1:
+            C = 'З';
+            break;
+        }
+
+    case 'В':
+        switch (N) {
+        case 0:
+            C = 'В';
+            break;
+        case 1:
+            C = 'С';
+            break;
+        case -1:
+            C = 'Ю';
+            break;
+        }
+    }
+    cout << C;
+    return 0;
+}  
