@@ -1,0 +1,15 @@
+#include <iostream>
+using namespace std;
+int main()
+{
+    setlocale(LC_ALL, "Rus");
+    int N, i;
+    float s(1), A;
+    cout << "Введите вещественное число и целое положительное число" << endl;
+    cin >> A >> N;
+    for (i = 1; i < N + 1; i++) {
+        s = s + pow(A, i);
+    }
+    cout << "Сумма = " << s << endl;
+    return 0;
+}
