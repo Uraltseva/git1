@@ -1,0 +1,17 @@
+#include <iostream>
+using namespace std;
+int main()
+{
+    setlocale(LC_ALL, "Rus");
+    int N, i;
+    float p = 1;
+    float a = 1.1;
+    cout << "Введите целое положительное число" << endl;
+    cin >> N;
+    for (int i = 1; i <= N; ++i) {
+        p *= a;
+        a += 0.1;
+    }
+    cout << "Произведение равно = " << p << endl;
+        return 0;
+}
