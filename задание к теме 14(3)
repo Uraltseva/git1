@@ -1,0 +1,15 @@
+#include <iostream>
+using namespace std;
+int main()
+{
+    setlocale(LC_ALL, "Rus");
+    int N, K(0), S(0);
+    cout << "Введите целое число N (> 1)" << endl;
+    cin >> N;
+    while (S < N) {
+        K++;
+        S = S + K;
+    }
+    cout << "Число К = " << K << endl;
+    return 0;
+}
