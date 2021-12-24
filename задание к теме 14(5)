@@ -9,6 +9,6 @@ int main() {
         if (A > B) A = A % B;
         else B = B % A;
     }
-    cout << A + B;
+    cout << "НОД = " << A + B << endl;
     return 0;
 }
