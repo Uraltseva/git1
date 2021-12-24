@@ -1,0 +1,14 @@
+#include <iostream>
+using namespace std;
+int main() {
+    setlocale(LC_ALL, "Russian");
+    int A, B;
+    cout << "Введите два целых положительных числа A и B (A < B)" << endl;
+    cin >> A >> B;
+    int i, i2;
+    for (i = A; i <= B; ++i) {
+        for (i2 = 1; i2 <= i; ++i2)
+            cout << i << " ";
+    }
+    return 0;
+}
