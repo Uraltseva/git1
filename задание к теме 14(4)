@@ -1,0 +1,17 @@
+#include <iostream>
+using namespace std;
+int main() {
+    setlocale(LC_ALL, "Rus");
+    float P;
+    cout << "Введите количество процентов P (P — вещественное число, 0 < P < 25)" << endl;
+    cin >> P;
+    int K = 1;
+    float s = 1000;
+    while (s <= 1100) {
+        K++;
+        s += s * P / 100;
+    }
+    cout << "Количество месяцев = " << K << endl;
+    cout << "Итоговый развер вклада = " << s << endl;
+    return 0;
+}
