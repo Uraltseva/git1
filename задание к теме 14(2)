@@ -1,0 +1,13 @@
+#include <iostream>
+using namespace std;
+int main() {
+	setlocale(LC_ALL, "Rus");
+	int A, B;
+	cout << "Введите два положительных числа A и B (A > B)" << endl;
+	cin >> A >> B;
+	while (A >= 0) {
+		A -= B;
+	}
+	cout << "Длина незанятой части отрезка A = " << A + B << endl;
+	return 0;
+}
