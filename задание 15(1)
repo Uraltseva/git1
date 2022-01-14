@@ -1,0 +1,20 @@
+#include <iostream>
+using namespace std;
+void PowerA3(float A, float& B)
+{
+    B = A * A * A;
+}
+int main()
+{
+    {
+        setlocale(LC_ALL, "Russian");
+        float v;
+        for (int i = 1; i < 6; i++) {
+            cout << "Введите число, которое нужно возвести в степень" << endl;
+            cin >> v;
+            PowerA3(v,v);
+            cout << "Третья степень данного числа = " << v << endl;
+        }
+    }
+    return 0;
+}
