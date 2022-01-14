@@ -1,0 +1,24 @@
+#include <iostream>
+using namespace std;
+int main()
+{
+    {
+        setlocale(LC_ALL, "Rus");
+        int N, A, B, sum(0);
+        cout << "Введите размер массива (>2) и два целых числа" << endl;
+        cin >> N >> A >> B;
+        int* array = new int[N];
+        array[0] = A;
+        cout << array[0] << " ";
+        array[1] = B;
+        cout << array[1] << " ";
+        sum = array[0] + array[1];
+        for (int i = 2; i < N; i++) {
+            array[i] = sum;
+            sum = sum + array[i];
+            cout << array[i] << " ";
+
+        }
+    }
+    return 0;
+}
