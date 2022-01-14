@@ -1,0 +1,30 @@
+#include <iostream>
+using namespace std;
+int main()
+{
+    {
+        setlocale(LC_ALL, "Rus");
+        int N;
+        cout << "Введите размер массива" << endl;
+        cin >> N;
+        int* array = new int[N];
+        cout << "Введите элементы массива" << endl;
+        for (int j = 0; j < N; j++) {
+            cin >> array[j];
+        }
+        if (N % 2 == 0) {
+            for (int i = 0; i <= N / 2 - 1; i++) {
+                cout << array[i] << " ";
+                cout << array[N - 1 - i] << " ";
+            }
+        }
+        if (N % 2 != 0) {
+            for (int i = 0; i <= N / 2; i++) {
+                cout << array[i] << " ";
+                if (i != N / 2) cout << array[N - 1 - i] << " ";
+            }
+
+        }
+    }
+    return 0;
+}
