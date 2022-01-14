@@ -1,0 +1,21 @@
+#include <iostream>
+using namespace std;
+int main()
+{
+    {
+        setlocale(LC_ALL, "Rus");
+        int N;
+        float A, D;
+        cout << "Введите размер массива (>1), первый член и знаменатель геометрической прогрессии" << endl;
+        cin >> N >> A >> D;
+        int* array = new int[N];
+        array[0] = A;
+        cout << array[0] << " ";
+        for (int i = 1; i < N; i++) {
+            array[i] = array[i - 1] * D;
+            cout << array[i] << " ";
+
+        }
+    }
+    return 0;
+}
