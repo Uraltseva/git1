@@ -1,0 +1,20 @@
+#include <iostream>
+using namespace std;
+float RingS(float R1, float R2)
+{
+    float S = 3.14 * (R1 * R1 - R2 * R2);
+    return S;
+}
+int main()
+{
+    {
+        setlocale(LC_ALL, "Rus");
+        float r1, r2;
+        for (int i = 1; i < 4; i++) {
+            cout << "Введите два радиуса окружностей (R1 > R2)" << endl;
+            cin >> r1 >> r2;
+            cout << "Площадь кольца = " << RingS(r1, r2) << endl;
+        }
+    }
+    return 0;
+}
