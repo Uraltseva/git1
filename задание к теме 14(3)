@@ -10,6 +10,6 @@ int main()
         K++;
         S = S + K;
     }
-    cout << "Число К = " << K << endl;
+    cout << "Число К = " << K << endl << "Сумма =" << S << endl;
     return 0;
 }
