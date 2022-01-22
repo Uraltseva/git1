@@ -2,22 +2,38 @@
 using namespace std;
 int main()
 {
-    {
-        setlocale(LC_ALL, "Russian");
+	setlocale(LC_ALL, "Rus");
+	int ab[1000];
+	int n1, i1;
+	cout << "Введите размер массива.";
+	cin >> n1;
+	for (i1 = 0; i1 < n1; i1++)
+	{
+		ab[i1] = i1 + 1;
+	}
+	for (i1 = 0; i1 < n1; i1++)
+	{
+		if (i1 % 2 == 0)
+		{
+			cout << ab[i1] << " ";
+		}
+		else if (i1 % 2 == 0)
+		{
+			cout << "";
+		}
 
-        int n;
-        cout << "Введите размер массива." << endl;
-        cin >> n;
-        int* mas = new int[n];
-        cout << "Введите элементы массива." << endl;
-        for (int j = 0; j < n; j++) {
-            cin >> mas[j];
-        }
-
-        for (int i = n - 1; i > -1; i -= 2) { cout << mas[i] << " "; }
-        for (int i = 1; i < n; i += 2) { cout << mas[i] << " "; }
-        cout << " " << endl;
-        cout << " " << endl; }
-
-    return 0;
+	}
+	cout << "\n";
+	for (i1 = n1 - 1; i1 >= 0; i1--)
+	{
+		if (i1 % 2 != 0)
+		{
+			cout << ab[i1] << " ";
+		}
+		else if (i1 % 2 != 0)
+		{
+			cout << " ";
+		}
+	}
+	return 0;
 }
